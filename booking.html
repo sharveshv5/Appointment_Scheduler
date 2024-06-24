@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Appoinment Scheduler</title>
+    <link rel="icon" href="appointment.png" type="image/png">
+    <style>
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+header {
+    background-color: orange;
+    color: darkblue;
+    text-align: center;
+    padding: 1rem;
+}
+header nav {
+    margin-top: 1rem;
+}
+header nav a {
+    margin: 0 1rem;
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: lightskyblue;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+}
+h2 {
+    margin-top: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin: 0.5rem 0 0.2rem;
+}
+input, select, button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid ;
+    border-radius: 4px;
+}
+button {
+    background-color:green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkgreen;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>V5 SERVICES</h1>
+        <nav>
+            <a href="booking.html">SCHEDULE APPOINTMENT</a>
+            <a href="manage.html">MANAGE APPOINTMENT</a>
+        </nav>
+    </header>  
+    <section id="booking">
+        <h2>Schedule Appointment</h2>
+        <form id="booking-form">
+            <label for="service">Select Service :</label>
+            <select id="service" name="service" required>
+                <option value="IT Consultants">IT Consultants</option>
+                <option value="Web Developers">Web Developers</option>
+                <option value="Software Trainers">Software Trainers</option>
+                <option value="Computer Repair Services">Computer Repair Services</option>
+            </select>
+            <label for="date">Select Date :</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Select Time :</label>
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>
